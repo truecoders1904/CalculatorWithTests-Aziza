@@ -19,7 +19,12 @@ namespace CalculatorWithTests
         {
             throw new NotImplementedException();
         }
-        public double GetFactoial(double num1, double num2)
+        public double GetFactorial(double num1, double num2)
+        {
+            throw new NotImplementedException();
+        }
+
+        public double GetFactorial(double num1)
         {
             throw new NotImplementedException();
         }

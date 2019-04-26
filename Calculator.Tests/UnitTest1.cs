@@ -13,10 +13,13 @@ namespace CalculatorWithTests.Tests
         public void ShouldAddData(double num1, double num2, double expected)
         {
             //Arrange
+            Calculator calculator = new Calculator();
 
             //Act
+            double actual = calculator.GetSum(num1, num2);
 
             //Assert
+            Assert.Equal(expected, actual);
         }
 
         [Theory]
@@ -25,12 +28,15 @@ namespace CalculatorWithTests.Tests
         [InlineData(0, 0, 0)]
        
         public void ShouldSubtractData(double num1, double num2, double expected)
-        { 
+        {
             //Arrange
+            Calculator calculator = new Calculator();
 
             //Act
+            double actual = calculator.GetDifference(num1, num2);
 
             //Assert
+            Assert.Equal(expected, actual);
         }
 
         [Theory]
@@ -40,12 +46,15 @@ namespace CalculatorWithTests.Tests
         [InlineData(0, 0, 0)]
 
         public void ShouldMultiplyData(double num1, double num2, double expected)
-        { 
+        {
             //Arrange
+            Calculator calculator = new Calculator();
 
             //Act
+            double actual = calculator.GetProduct(num1, num2);
 
             //Assert
+            Assert.Equal(expected, actual);
         }
 
         [Theory]
@@ -53,16 +62,19 @@ namespace CalculatorWithTests.Tests
         [InlineData(-24, 3, 8)]
         [InlineData(24, -3, -8)]
         [InlineData(0, 7, 0)]
-        [InlineData(15, 0, 0]
+        [InlineData(15, 0, 0)]
        
 
         public void ShouldDivideData(double num1, double num2, double expected)
-        { 
+        {
             //Arrange
+            Calculator calculator = new Calculator();
 
             //Act
+            double actual = calculator.GetQuotient(num1, num2);
 
             //Assert
+            Assert.Equal(expected, actual);
         }
 
         [Theory]
@@ -72,14 +84,15 @@ namespace CalculatorWithTests.Tests
         [InlineData(0, 1)]
 
         public void ShouldFactorialData(double num1, double expected)
-        { 
+        {
             //Arrange
+            Calculator calculator = new Calculator();
 
             //Act 
+            double actual = calculator.GetFactorial(num1);
 
             //Assert
+            Assert.Equal(expected, actual);
         }
-
-
     }
 }
