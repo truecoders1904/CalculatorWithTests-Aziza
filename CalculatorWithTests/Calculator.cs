@@ -3,8 +3,25 @@ namespace CalculatorWithTests
 {
     public class Calculator
     {
-        public Calculator()
+        public double GetSum(double num1, double num2)
         {
+            throw new NotImplementedException();
+        }
+        public double GetDifference(double num1, double num2)
+        {
+            throw new NotImplementedException();
+        }
+        public double GetProduct(double num1, double num2)
+        {
+            throw new NotImplementedException();
+        }
+        public double GetQuotient(double num1, double num2)
+        {
+            throw new NotImplementedException();
+        }
+        public double GetFactoial(double num1, double num2)
+        {
+            throw new NotImplementedException();
         }
     }
 }
